@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "stylelint-config-prettier",
+    "stylelint-config-suitcss",
+    "stylelint-config-styled-components"
+  ],
+  "ignoreFiles": ["node_modules", "public/assets/css/**/*.css"],
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {}
+    ]
+  }
+}
